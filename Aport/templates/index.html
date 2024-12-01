@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %} Protfolio {% endblock title %}</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <div class="container">
+        {% block content1 %} 
+        <div class="row my-5">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+
+            </div>
+            <div class="circular-image-container">
+                <img class="circular-image"src="{% static 'image/rahul.jpg' %}" alt="image">
+
+            </div>
+            
+
+            <div class="col-4 text-center mt-5">
+              <h4>hi, My name is </h4>
+              <div class="name">
+                <h1 >Rahul Yadav</h1>
+                <h1>I am Web Devloper</h1>
+              </div>
+              
+            </div>
+            <div class="social-links text-center mt-4">
+              <a href="https://www.linkedin.com/in/rahul-yadav-2ab51a280/" target="">
+                  <img src="{% static 'image/message.png' %}" alt="LinkedIn" style="width: 30px; margin: 0 10px;"class="social-links">
+              </a>
+              <a href="https://github.com/rahulyadav2104/rahulyadav2104" target="_blank">
+                  <img src="{% static 'image/github.png' %}" alt="GitHub" style="width: 30px; margin: 0 10px;"class="social-links">
+              </a>
+              <a href="https://medium.com/@rahulyadav_42316" target="_blank">
+                  <img src="{% static 'image/medium.png' %}" alt="Medium" style="width: 30px; margin: 0 10px;" class="social-links">
+              </a>
+          </div>
+          
+
+            
+
+
+        </div>
+        {% endblock content1 %}
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
