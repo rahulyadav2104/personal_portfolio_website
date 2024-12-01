@@ -1,7 +1,7 @@
 # personal_portfolio_website
 
 
-Sure! Here's a list of points you can include in the README file for your first portfolio website project on GitHub:
+
 
 1. Project Title
 A clear and concise title for your project. Example: Personal Portfolio Website
