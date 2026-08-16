@@ -19,41 +19,42 @@
   <body>
     {% include "navbar.html" %}
     <div class="container">
-        {% block content1 %} 
-        <div class="row my-5">
-            <div class="col-3 d-flex justify-content-center align-items-center">
+        {% block content1 %}
+        <div class="hero-section">
+            <div class="container hero-content">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <div class="circular-image-container">
+                            <img class="circular-image" src="{% static 'image/rahul.jpg' %}" alt="Rahul Yadav">
+                        </div>
+                    </div>
+                    <div class="col-md-8 text-center text-md-start">
+                        <h4 class="greeting">Hello, My name is</h4>
+                        <div class="name">
+                            <h1>Rahul Yadav</h1>
+                            <div class="profession">Web Developer</div>
+                        </div>
+                        <p class="mb-4">I specialize in creating responsive, user-friendly websites with modern technologies. Passionate about clean code and creative solutions.</p>
 
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/rahul-yadav-2ab51a280/" target="_blank">
+                                <img src="{% static 'image/message.png' %}" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/rahulyadav2104/rahulyadav2104" target="_blank">
+                                <img src="{% static 'image/github.png' %}" alt="GitHub">
+                            </a>
+                            <a href="https://medium.com/@rahulyadav_42316" target="_blank">
+                                <img src="{% static 'image/medium.png' %}" alt="Medium">
+                            </a>
+                        </div>
+
+                        <div class="cta-buttons">
+                            <a href="#" class="btn btn-custom btn-primary-custom">Download Resume</a>
+                            <a href="#" class="btn btn-custom btn-outline-custom">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="circular-image-container">
-                <img class="circular-image"src="{% static 'image/rahul.jpg' %}" alt="image">
-
-            </div>
-            
-
-            <div class="col-4 text-center mt-5">
-              <h4>hi, My name is </h4>
-              <div class="name">
-                <h1 >Rahul Yadav</h1>
-                <h1>I am Web Devloper</h1>
-              </div>
-              
-            </div>
-            <div class="social-links text-center mt-4">
-              <a href="https://www.linkedin.com/in/rahul-yadav-2ab51a280/" target="">
-                  <img src="{% static 'image/message.png' %}" alt="LinkedIn" style="width: 30px; margin: 0 10px;"class="social-links">
-              </a>
-              <a href="https://github.com/rahulyadav2104/rahulyadav2104" target="_blank">
-                  <img src="{% static 'image/github.png' %}" alt="GitHub" style="width: 30px; margin: 0 10px;"class="social-links">
-              </a>
-              <a href="https://medium.com/@rahulyadav_42316" target="_blank">
-                  <img src="{% static 'image/medium.png' %}" alt="Medium" style="width: 30px; margin: 0 10px;" class="social-links">
-              </a>
-          </div>
-          
-
-            
-
-
         </div>
         {% endblock content1 %}
     </div>
@@ -63,5 +64,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>
